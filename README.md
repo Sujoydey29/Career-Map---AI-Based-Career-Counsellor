@@ -75,10 +75,8 @@ Follow these instructions to set up and run the AI Career Counselor locally.
     ```env
     # .env
     LLAMA_API_ENDPOINT="http://localhost:11434/api/generate"
-    LLAMA_API_KEY=""
     ```
     *   `LLAMA_API_ENDPOINT`: This is the endpoint for your local Ollama instance's generate API. The default `http://localhost:11434/api/generate` should work if Ollama is running on its default port.
-    *   `LLAMA_API_KEY`: This is **not required** for local Ollama setups and can be left blank or omitted. It's included as a placeholder in case of future integrations with hosted models.
 
 4.  **Run the application:**
     ```bash
