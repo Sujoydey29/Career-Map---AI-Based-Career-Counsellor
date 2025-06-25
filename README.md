@@ -15,7 +15,7 @@ Welcome to the AI Career Counselor! This application leverages a local Llama 3 m
     *   Generates structured, multi-phase learning timetables based on a selected job and user-defined timeframe (e.g., "2 months", "1 year").
     *   The AI is strictly instructed to adhere to the specified duration for timetables.
 *   **AI-Powered by Local LLM:**
-    *   Utilizes a local Llama 3 model (e.g., `llama3:8b`) via Ollama.
+    *   Utilizes a local Llama 3 model (e.g., `llama3.2`) via Ollama.
     *   Employs Retrieval Augmented Generation (RAG) with both static knowledge bases and dynamic user-defined items to enhance response quality.
     *   Prompts are engineered to request and parse JSON output from the LLM.
 *   **User Experience:**
@@ -49,9 +49,9 @@ Follow these instructions to set up and run the AI Career Counselor locally.
     *   Install Ollama from [ollama.com](https://ollama.com/).
     *   Ensure the Ollama application is running.
 4.  **Llama 3 Model:**
-    *   Pull the Llama 3 model using Ollama. The application is configured to use `llama3:8b` by default.
+    *   Pull the Llama 3 model using Ollama. The application is configured to use `llama3.2` by default.
         ```bash
-        ollama pull llama3:8b
+        ollama pull llama3.2
         ```
     *   You can verify the model is available by running `ollama list`.
 
@@ -88,7 +88,7 @@ Follow these instructions to set up and run the AI Career Counselor locally.
 
 The application's core AI capabilities are powered by a local Llama 3 model accessed through Ollama.
 
-*   **Model:** By default, `llama3:8b` is used (configured in `services/aiService.ts`).
+*   **Model:** By default, `llama3.2` is used (configured in `services/aiService.ts`).
 *   **Communication:** The `services/aiService.ts` handles all communication with the Ollama API endpoint specified by `LLAMA_API_ENDPOINT`.
 *   **JSON Output:** Prompts sent to the LLM are carefully constructed to instruct it to return responses in JSON format. The service then parses this JSON.
 *   **Streaming:** Responses from Ollama are streamed to update the UI progressively where applicable (though the final output is parsed as a whole JSON).
