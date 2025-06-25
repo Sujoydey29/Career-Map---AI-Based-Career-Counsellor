@@ -4,7 +4,7 @@ import type { UserInput, CareerAdvisorResponse, StructuredTimetable } from '../t
 import { getUserDefinedItems } from './localStorageService'; // Import for dynamic RAG
 
 const LLAMA_API_ENDPOINT = process.env.LLAMA_API_ENDPOINT;
-const MODEL_NAME = "llama3:8b"; // Corrected model name as per README
+const MODEL_NAME = "llama3.2"; // Corrected model name as per README
 
 // --- Simulated RAG Knowledge Base ---
 interface KBEntry {
