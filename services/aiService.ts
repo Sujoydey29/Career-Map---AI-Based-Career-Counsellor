@@ -261,8 +261,14 @@ const generateLlamaTimetableUserMessage = (jobTitle: string, jobDescription: str
     - "1 month" means the plan MUST cover EXACTLY 4 weeks in total.
     - "2 months" means the plan MUST cover EXACTLY 8 weeks in total.
     - "3 months" means the plan MUST cover EXACTLY 12 weeks in total.
-    - "4 months" means the plan MUST cover EXACTLY 16-17 weeks in total (typically four 4-week phases, totaling 16 weeks).
-    - "6 months" means the plan MUST cover approximately 24-26 weeks in total.
+    - "4 months" means the plan MUST cover EXACTLY 16 weeks in total.
+    - "5 months" means the plan MUST cover EXACTLY 22 weeks in total.
+    - "6 months" means the plan MUST cover EXACTLY 26 weeks in total.
+    - "7 months" means the plan MUST cover EXACTLY 30 weeks in total.
+    - "8 months" means the plan MUST cover EXACTLY 34 weeks in total.
+    - "9 months" means the plan MUST cover EXACTLY 40 weeks in total.
+    - "10 months" means the plan MUST cover EXACTLY 44 weeks in total.
+    - "11 months" means the plan MUST cover EXACTLY 48 weeks in total.
     - "1 year" means the plan MUST cover approximately 52 weeks in total.
     - For other durations (e.g., "dedicated", "few weeks"), make a reasonable interpretation aiming for conciseness unless a long duration is clearly implied by the user, and state the assumed total weeks in the introductoryNote.
     If the provided roadmap seems too extensive for the requested timeframe, you MUST simplify the roadmap, reduce tasks per week, or consolidate topics. DO NOT extend the total number of weeks beyond the user's explicit request based on these conversions.
